@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://ddqxdd4uh72ex"]
+
+[ext_resource type="Texture2D" uid="uid://cvypoilr6a5op" path="res://icon.svg" id="1_ejho1"]
+[ext_resource type="AudioStream" uid="uid://ls14sofcljm8" path="res://music.mp3" id="2_kck2o"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(965, 559)
+texture = ExtResource("1_ejho1")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_kck2o")
+autoplay = true
+parameters/looping = true
+
+[node name="Label" type="Label" parent="."]
+offset_left = 356.0
+offset_top = 364.0
+offset_right = 1571.0
+offset_bottom = 387.0
+text = "you need to click the body of the page to start the audio because JavaScript AudioContext prevents audio playback until the user has interacted with the page"
